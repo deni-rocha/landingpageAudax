@@ -5,12 +5,12 @@ import Head from 'next/head'
 import Footer from '../src/components/Footer'
 import Header from '../src/components/Header'
 import Main from '../src/components/Main'
-import Sidebar from '../src/components/Sidebar'
+import Sidebar from '../src/components/Mobile/Sidebar'
 
 const Home: NextPage = () => {
   const refDivMenuMobile = useRef<HTMLDivElement>(null)
   return (
-    <div className="h-full w-full font-inter bg-bgDefault text-white">
+    <div className="h-full w-full font-inter bg-bgDefault text-textPrimary">
       <Head>
         {/* cabeçalho do HTML esse elemento não é exibido */}
         <title>Landing Page</title>
