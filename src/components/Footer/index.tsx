@@ -1,4 +1,4 @@
-const Footer: React.FunctionComponent = () => {
+const Footer = () => {
   return (
     <footer>
       <span>footer</span>
