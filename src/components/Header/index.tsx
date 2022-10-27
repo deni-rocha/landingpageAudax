@@ -1,7 +1,7 @@
 import { RefObject } from 'react'
 
 import Nav from '../Nav'
-import BtnMobile from '../btnMobile'
+import BtnMobile from '../Mobile/btnMobile'
 
 interface IHeader {
   refDivMenuMobile: RefObject<HTMLDivElement>
