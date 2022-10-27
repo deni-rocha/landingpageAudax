@@ -1,13 +1,37 @@
-const Header: React.FunctionComponent = () => {
+import { RefObject } from 'react'
+
+import Nav from '../Nav'
+import BtnMobile from '../btnMobile'
+
+interface IHeader {
+  refDivMenuMobile: RefObject<HTMLDivElement>
+}
+const Header = ({ refDivMenuMobile }: IHeader) => {
   return (
-    <header className="flex absolute gap-2 flex-col md:flex-row w-10/12 h-20 items-center md:justify-between bg-bgDefault border border-white">
-      <h1 className="text-4xl font-extrabold uppercase">Datanow</h1>
-      <nav className="space-x-6 md:space-x-12">
-        <a href="">Início</a>
-        <a href="">Conheça</a>
-        <a href="">Funcionalidades</a>
-        <a href="">Contato</a>
-      </nav>
+    <header
+      className="
+      flex gap-4 flex-col items-center w-10/12 text-xs
+      xs:flex-row xs:justify-between
+      md:flex-row
+      md:justify-between
+      "
+    >
+      <h1
+        className="text-lg font-extrabold uppercase 
+      
+      "
+      >
+        Datanow
+      </h1>
+      <Nav
+        className={{
+          nav: 'xs:hidden ',
+          ul: 'flex space-x-6 md:space-x-12 ',
+          li: '',
+          a: ''
+        }}
+      />
+      <BtnMobile refDivMenuMobile={refDivMenuMobile} />
     </header>
   )
 }
