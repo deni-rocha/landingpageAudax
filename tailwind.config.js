@@ -14,6 +14,8 @@ module.exports = {
     colors: {
       btnColorGreen: '#0DE67B',
       bgDefault: '#0F123F',
+      textPrimary: '#FFFFFF',
+      textSecondary: '#8794BA',
       ...colors
     },
     fontFamily: {
