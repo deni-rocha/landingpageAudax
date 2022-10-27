@@ -7,32 +7,49 @@ import Image from 'next/image'
 
 const Main = () => {
   return (
-    <section className="mt-24">
-      <div className="flex flex-col w-8/12 items-center m-auto">
-        <div className="flex justify-between mt-8 w-6/12 absolute">
-          <div className="w-2/12">
-            <Image src={dataTL} alt="table-data" />
-          </div>
-          <div className="w-2/12">
-            <Image src={dataTR} alt="table-data" />
-          </div>
+    <section
+      className="
+      mt-10 space-y-8 
+      flex flex-col items-center"
+    >
+      <div
+        className="
+        max-w-xs relative w-full
+        flex flex-col items-center 
+       "
+      >
+        <div
+          className="w-10 absolute 
+        top-10 left-16
+        "
+        >
+          <Image src={dataTL} alt="table-data" />
         </div>
-        <div className="z-10 w-10/12">
-          <Image src={notebookFirst} alt="notebook" />
+        <div
+          className="w-10 absolute 
+        top-20 right-8
+        "
+        >
+          <Image src={dataTR} alt="table-data" className="object-cover" />
         </div>
-        <div className=" flex mt-56 absolute w-6/12 justify-between">
-          <div className="w-4/12">
-            <Image src={dataBL} alt="table-data" />
-          </div>
-          <div className="w-4/12">
-            <Image src={dataBR} alt="table-data" />
-          </div>
+
+        <div className="h-60 w-64 z-10">
+          <Image src={notebookFirst} alt="notebook" className="object-cover" />
+        </div>
+
+        <div className="w-14 absolute bottom-3 left-4">
+          <Image src={dataBL} alt="table-data" className="object-cover" />
+        </div>
+        <div className="w-16 absolute bottom-6 right-10">
+          <Image src={dataBR} alt="table-data" className="object-cover" />
         </div>
       </div>
 
-      <article>Esse texto é uma headline super legal</article>
-      <div className="mx-2">conteudo mains</div>
-      <p className="">Esse texto é uma headline super legal</p>
+      <div className="border-white border">
+        <h1>Esse texto é uma headline super legal</h1>
+        <div className="mx-2">conteudo mains</div>
+        <p className="">Esse texto é uma headline super legal</p>
+      </div>
     </section>
   )
 }
