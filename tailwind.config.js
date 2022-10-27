@@ -7,7 +7,12 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    screens: {
+      xs: { max: '475px' },
+      ...defaultTheme.screens
+    },
     colors: {
+      btnColorGreen: '#0DE67B',
       bgDefault: '#0F123F',
       ...colors
     },
@@ -15,7 +20,17 @@ module.exports = {
       inter: ['Inter', 'sans-serif'],
       ...defaultTheme.fontFamily
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        menuDelayIn: {
+          from: { right: '-360px' },
+          to: { right: '0px' }
+        }
+      },
+      animation: {
+        menuDelayIn: 'menuDelayIn .5s ease'
+      }
+    },
     plugins: []
   }
 }
