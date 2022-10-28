@@ -1,9 +1,13 @@
-import HeadlineBlock from './HeadlineBlock'
+import MainBottonLine from './MainBottomLine'
+import MainMiddleLine from './MainMiddleLine'
+import MainTopLine from './MainTopLineMain'
 
 const Main = () => {
   return (
     <>
-      <HeadlineBlock />
+      <MainTopLine />
+      <MainMiddleLine />
+      <MainBottonLine />
     </>
   )
 }

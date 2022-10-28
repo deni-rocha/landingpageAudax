@@ -5,7 +5,7 @@ import dataTL from '../../../assets/headline-block/dataTL.png'
 import dataTR from '../../../assets/headline-block/dataTR.png'
 import Image from 'next/image'
 
-const HeadlineBlock = () => {
+const MainTopLine = () => {
   return (
     <section
       className="
@@ -46,7 +46,7 @@ const HeadlineBlock = () => {
         </div>
       </section>
 
-      <div className="border-white border p-2">
+      <div className="p-2">
         <section
           className="
             font-bold leading-6 text-lg
@@ -81,4 +81,4 @@ const HeadlineBlock = () => {
   )
 }
 
-export default HeadlineBlock
+export default MainTopLine
