@@ -27,10 +27,15 @@ module.exports = {
         menuDelayIn: {
           from: { right: '-360px' },
           to: { right: '0px' }
+        },
+        menuDelayOut: {
+          from: { right: '0' },
+          to: { right: '-360px' }
         }
       },
       animation: {
-        menuDelayIn: 'menuDelayIn .5s ease'
+        menuDelayIn: 'menuDelayIn .5s ease',
+        menuDelayOut: 'menuDelayOut .5s ease-out'
       }
     },
     plugins: []
