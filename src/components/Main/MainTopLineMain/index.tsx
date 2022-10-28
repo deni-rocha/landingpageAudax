@@ -1,8 +1,8 @@
-import notebookFirst from '../../../assets/headline-block/notebook-first.png'
-import dataBL from '../../../assets/headline-block/dataBL.png'
-import dataBR from '../../../assets/headline-block/dataBR.png'
-import dataTL from '../../../assets/headline-block/dataTL.png'
-import dataTR from '../../../assets/headline-block/dataTR.png'
+import notebookFirst from '../../../assets/MainTopLine/notebook-first.png'
+import dataBL from '../../../assets/MainTopLine/dataBL.png'
+import dataBR from '../../../assets/MainTopLine/dataBR.png'
+import dataTL from '../../../assets/MainTopLine/dataTL.png'
+import dataTR from '../../../assets/MainTopLine/dataTR.png'
 import Image from 'next/image'
 
 const MainTopLine = () => {
