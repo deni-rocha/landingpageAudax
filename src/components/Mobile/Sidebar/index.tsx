@@ -7,13 +7,18 @@ interface ISideBar {
 }
 const Sidebar = ({ refDivMenuMobile }: ISideBar) => {
   function closeBtn() {
-    refDivMenuMobile.current?.classList.remove('xs:flex')
+    // esse timeout é para a animação de 'remoção' do sidebar
+    setTimeout(() => {
+      refDivMenuMobile.current?.classList.remove('xs:animate-menuDelayOut')
+      refDivMenuMobile.current?.classList.remove('xs:flex')
+    }, 500)
+    refDivMenuMobile.current?.classList.add('xs:animate-menuDelayOut')
   }
 
   return (
     <>
       <div
-        className="fixed right-0 w-screen h-screen z-20 hidden xs:justify-end"
+        className="fixed right-0 w-screen  h-screen z-20 hidden xs:justify-end"
         ref={refDivMenuMobile}
       >
         <div
