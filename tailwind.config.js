@@ -8,7 +8,8 @@ module.exports = {
   ],
   theme: {
     screens: {
-      breakpointGrid: '1020px',
+      breakpointGridLg: '1016px',
+      breakpointGridMd: { min: '750px', max: '1026px' },
       xs: { max: '475px' },
       ...defaultTheme.screens
     },
