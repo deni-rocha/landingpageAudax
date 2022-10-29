@@ -10,16 +10,15 @@ const Header = ({ refDivMenuMobile }: IHeader) => {
   return (
     <header
       className="
-      flex gap-4 flex-col items-center w-10/12 text-xs
+      flex gap-4 flex-col items-center w-full text-xs
       xs:flex-row xs:justify-between
-      md:flex-row
-      md:justify-between
+      md:flex-row md:justify-between
       "
     >
       <h1
-        className="text-lg font-extrabold uppercase 
-      
-      "
+        className="text-lg font-black uppercase 
+        lg:text-2xl
+        "
       >
         Datanow
       </h1>
