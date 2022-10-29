@@ -20,7 +20,12 @@ const Home: NextPage = () => {
       {/* sidebar for mobile (only xs:screen)*/}
       <Sidebar refDivMenuMobile={refDivMenuMobile} />
       {/* sidebar for mobile (only xs:screen)*/}
-      <section className="w-10/12 mx-auto py-16 ">
+      <section
+        className="
+      w-10/12 mx-auto py-16
+      md:w-8/12
+      "
+      >
         <Header refDivMenuMobile={refDivMenuMobile} />
         <Main />
         <Footer />
