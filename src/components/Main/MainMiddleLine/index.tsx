@@ -41,7 +41,7 @@ const MainMiddleLine = () => {
 
       <section className="py-12">
         <div
-          className="space-y-12 flex flex-col 
+          className="space-y-12 flex flex-col
         md:flex-row md:items-center p-2 md:justify-center md:gap-6 md:space-y-0
         "
         >
@@ -61,16 +61,25 @@ const MainMiddleLine = () => {
           />
         </div>
 
-        <section className="pt-24 breakpointGrid:grid breakpointGrid:grid-cols-2">
+        <section
+          className="pt-24  
+          breakpointGridMd:grid breakpointGridMd:grid-cols-2 breakpointGridMd:pt-10
+          breakpointGridLg:grid-rows-4 breakpointGridLg:mx-auto 
+          breakpointGridLg:grid breakpointGridLg:max-w-2xl breakpointGridLg:grid-cols-2
+        "
+        >
           <MainCardLastBlock
             title="Lorem ipsum"
             subTitle="dolor sit amen"
             description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi."
-            className="md:row-span-1 md:col-span-2"
+            className="breakpointGridMd:row-start-1 breakpointGridMd:col-start-1 breakpointGridLg:row-span-1 breakpointGridLg:col-span-2 "
           />
-          <MainCardLastBlock className="md:row-span-1 md:col-start-3" isImage>
+          <MainCardLastBlock
+            className="breakpointGridMd:row-start-2 breakpointGridMd:col-start-4 breakpointGridLg:row-span-1 breakpointGridLg:col-start-3 "
+            isImage
+          >
             <Image src={secondRight} alt="notebook" objectFit="cover" />
           </MainCardLastBlock>
           <MainCardLastBlock
@@ -79,9 +88,12 @@ const MainMiddleLine = () => {
             description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi."
-            className="md:row-span-2 md:col-span-1 "
+            className="breakpointGridMd:row-start-3 breakpointGridMd:col-start-1 breakpointGridLg:row-span-2 breakpointGridLg:col-start-3"
           />
-          <MainCardLastBlock className="md:row-start-2 md:col-span-2" isImage>
+          <MainCardLastBlock
+            className="breakpointGridMd:row-start-4 breakpointGridMd:col-start-4 breakpointGridLg:row-start-2 breakpointGridLg:col-span-2"
+            isImage
+          >
             <Image src={thirdLeft} alt="notebook" objectFit="cover" />
           </MainCardLastBlock>
           <MainCardLastBlock
@@ -90,10 +102,12 @@ const MainMiddleLine = () => {
             description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi."
-            className="md:row-start-2 md:col-span-1"
+            className="breakpointGridMd:row-start-5 breakpointGridMd:col-start-1 breakpointGridLg:row-start-2 breakpointGridLg:col-span-1"
           />
           <MainCardLastBlock
-            className="md:row-start-3 md:col-start-3 md:order-1"
+            className="breakpointGridMd:row-start-6 breakpointGridMd:col-start-4 
+            breakpointGridMd:w-52 breakpointGridMd:h-52 breakpointGridMd:mr-8
+            breakpointGridLg:row-start-3  breakpointGridLg:col-start-3 breakpointGridLg:order-1"
             isImage
           >
             <Image
@@ -109,10 +123,14 @@ const MainMiddleLine = () => {
             description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi."
-            className="md:row-start-3 md:col-span-2"
+            className="breakpointGridMd:row-start-7 breakpointGridMd:col-start-4 
+             breakpointGridLg:row-start-3 breakpointGridLg:col-span-2"
           />
           <MainCardLastBlock
-            className="md:row-start-4 md:col-span-2 space-y-0 "
+            className="breakpointGridMd:row-start-6 breakpointGridMd:col-start-1 breakpointGridMd:w-52 breakpointGridMd:h-52
+            breakpointGridMd:ml-10
+            breakpointGridLg:row-start-4 
+            space-y-0 "
             isImage
           >
             <Image
