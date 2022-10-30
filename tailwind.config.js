@@ -18,10 +18,12 @@ module.exports = {
       bgDefault: '#0F123F',
       textPrimary: '#FFFFFF',
       textSecondary: '#8794BA',
+      bgInput: '#F6F6F6',
       ...colors
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif'],
       ...defaultTheme.fontFamily
     },
     extend: {
