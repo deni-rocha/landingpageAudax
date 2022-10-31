@@ -2,10 +2,10 @@ import type { NextPage } from 'next'
 import { useRef } from 'react'
 import Head from 'next/head'
 
-import Footer from '../src/components/Footer'
 import Header from '../src/components/Header'
 import Main from '../src/components/Main'
 import Sidebar from '../src/components/Mobile/Sidebar'
+import Bottom from '../src/components/Bottom'
 
 const Home: NextPage = () => {
   const refDivMenuMobile = useRef<HTMLDivElement>(null)
@@ -28,7 +28,9 @@ const Home: NextPage = () => {
       >
         <Header refDivMenuMobile={refDivMenuMobile} />
         <Main />
-        <Footer />
+      </section>
+      <section>
+        <Bottom />
       </section>
     </div>
   )
