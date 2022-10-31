@@ -1,4 +1,3 @@
-import MainBottonLine from './MainBottomLine'
 import MainMiddleLine from './MainMiddleLine'
 import MainTopLine from './MainTopLineMain'
 
@@ -7,7 +6,6 @@ const Main = () => {
     <>
       <MainTopLine />
       <MainMiddleLine />
-      <MainBottonLine />
     </>
   )
 }
