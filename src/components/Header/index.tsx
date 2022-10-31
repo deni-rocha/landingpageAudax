@@ -2,6 +2,7 @@ import { RefObject } from 'react'
 
 import Nav from '../Nav'
 import BtnMobile from '../Mobile/btnMobile'
+import Tittle from './Tittle'
 
 interface IHeader {
   refDivMenuMobile: RefObject<HTMLDivElement>
@@ -15,16 +16,10 @@ const Header = ({ refDivMenuMobile }: IHeader) => {
       md:flex-row md:justify-between
       "
     >
-      <h1
-        className="text-lg font-black uppercase 
-        lg:text-2xl
-        "
-      >
-        Datanow
-      </h1>
+      <Tittle />
       <Nav
         className={{
-          nav: 'xs:hidden ',
+          nav: 'xs:hidden',
           ul: 'flex space-x-6 md:space-x-12 ',
           li: '',
           a: ''
